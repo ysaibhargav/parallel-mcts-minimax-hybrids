@@ -1,1 +1,1 @@
-# parallel-mcts-minimax-hybrids
+# Parallel MCTS-minimax hybrids
