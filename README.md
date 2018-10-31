@@ -1,8 +1,8 @@
 # Parallel MCTS-minimax hybrids
 ### Peter de Groot and Sai Bhargav Yalamanchi
 
-## URL
-http://ysaibhargav.github.io/parallel-mcts-minimax-hybrids
+## URL (proposal)
+https://github.com/ysaibhargav/parallel-mcts-minimax-hybrids/blob/master/reports/Project_Proposal.pdf
 
 ## SUMMARY
 We are going to implement a hybrid MCTS-minimax algorithm to solve chess problems. The algorithm will take advantage of various sources of parallelism in the algorithm with CUDA and OpenMP and the times to execute will be compared against speedup over sequential.
@@ -58,23 +58,23 @@ Report and finalization
 
 ## REFERENCES
 
-[1] https://dke.maastrichtuniversity.nl/m.winands/documents/mcts-minimax_hybrids_final.pdf
+[1] [MCTS-Minimax hybrids](https://dke.maastrichtuniversity.nl/m.winands/documents/mcts-minimax_hybrids_final.pdf)
 
-[2] http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.159.4373&rep=rep1&type=pdf
+[2] [Parallel MCTS](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.159.4373&rep=rep1&type=pdf)
 
-[3] http://olab.is.s.u-tokyo.ac.jp/~kamil.rocki/rocki_ppam09.pdf
+[3] [Parallel Minimax](http://olab.is.s.u-tokyo.ac.jp/~kamil.rocki/rocki_ppam09.pdf)
 
 ## RESOURCES
 ### Reference code base
 
-Chess - https://github.com/tobijk/simple-chess
+[Chess](https://github.com/tobijk/simple-chess)
 
-MCTS github repo - https://github.com/memo/ofxMSAmcts
+[MCTS](https://github.com/memo/ofxMSAmcts)
 
-Minimax github repo - https://github.com/ryancesiel/tictactoe-minimax
+[Minimax](https://github.com/ryancesiel/tictactoe-minimax)
 
 ### Chess puzzle PGNs
 
-https://chess.stackexchange.com/questions/19633/chess-puzzle-database-with-pgn-or-fen
+[StackExchange reference on PGNs](https://chess.stackexchange.com/questions/19633/chess-puzzle-database-with-pgn-or-fen)
 
-http://gorgonian.weebly.com/pgn.html Auerswald collection
+[Auerswald collection](http://gorgonian.weebly.com/pgn.html)
