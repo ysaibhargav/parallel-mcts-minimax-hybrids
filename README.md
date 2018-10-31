@@ -2,7 +2,7 @@
 ### Peter de Groot and Sai Bhargav Yalamanchi
 
 ## URL (proposal)
-https://github.com/ysaibhargav/parallel-mcts-minimax-hybrids/blob/master/reports/Project_Proposal.pdf
+[https://github.com/ysaibhargav/parallel-mcts-minimax-hybrids/blob/master/reports/Project_Proposal.pdf](https://github.com/ysaibhargav/parallel-mcts-minimax-hybrids/blob/master/reports/Project_Proposal.pdf)
 
 ## SUMMARY
 We are going to implement a hybrid MCTS-minimax algorithm to solve chess problems. The algorithm will take advantage of various sources of parallelism in the algorithm with CUDA and OpenMP and the times to execute will be compared against speedup over sequential.
