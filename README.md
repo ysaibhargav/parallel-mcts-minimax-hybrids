@@ -64,6 +64,8 @@ Report and finalization
 
 [3] [Parallel Minimax](http://olab.is.s.u-tokyo.ac.jp/~kamil.rocki/rocki_ppam09.pdf)
 
+[4] [MCTS survey](http://mcts.ai/pubs/mcts-survey-master.pdf)
+
 ## RESOURCES
 ### Reference code base
 
