@@ -66,6 +66,8 @@ Report and finalization
 
 [4] [MCTS survey](http://mcts.ai/pubs/mcts-survey-master.pdf)
 
+[5] [MCTS chess](https://www.ke.tu-darmstadt.de/lehre/arbeiten/bachelor/2012/Arenz_Oleg.pdf)
+
 ## RESOURCES
 ### Reference code base
 
