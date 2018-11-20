@@ -43,23 +43,39 @@ Sequential code (combining chess code + MCTS + minimax, implementing and getting
 
 Week 2
 
-Sequential (implementing and getting minimax-selection hybrid to work) + CUDA leaf parallelism (minimax-rollout)
+Sequential (implementing and getting minimax-selection hybrid to work): FEN (Peter), MCTS (Sai)
 
 Week 3
 
-CUDA leaf parallelism (minimax-rollout) + OpenMP root parallelism (minimax-selection)
+Sequential (implementing and getting minimax-selection hybrid to work) (Sai)
+
+Week 3.5
+
+CUDA leaf parallelism (minimax-rollout) (Peter) + Sequential (root parallelism minimax) (Sai)
 
 Week 4
 
-OpenMP root parallelism (minimax-selection)
+CUDA leaf parallelism (minimax-rollout) (Peter) + OpenMP root parallelism (minimax-selection) (Sai)
+
+Week 4.5
+
+CUDA leaf parallelism (minimax-rollout) (Peter) + OpenMP root parallelism (minimax-selection) (Sai)
 
 Week 5
 
-Tree parallelism (CUDA/OpenMP) (minimax-selection)
+OpenMP root parallelism (minimax-selection) (Sai) + Tree parallelism (CUDA/OpenMP) (minimax-selection) (Peter)
+
+Week 5.5
+
+OpenMP root parallelism (minimax-selection) (Sai) + Tree parallelism (CUDA/OpenMP) (minimax-selection) (Peter)
 
 Week 6
 
-Report and finalization
+Tree parallelism (CUDA/OpenMP) (minimax-selection) (Peter + Sai)
+
+Week 6.5
+
+Report and finalization (Peter + Sai)
 
 
 ## REFERENCES
