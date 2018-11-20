@@ -3,6 +3,7 @@
 
 ## URLs 
 [Proposal](https://github.com/ysaibhargav/parallel-mcts-minimax-hybrids/blob/master/reports/Project_Proposal.pdf)
+
 [Checkpoint](https://github.com/ysaibhargav/parallel-mcts-minimax-hybrids/blob/master/reports/Project_Checkpoint.pdf)
 
 ## SUMMARY
