@@ -1,8 +1,10 @@
 # Parallel MCTS-minimax hybrids
 ### Peter de Groot and Sai Bhargav Yalamanchi
 
-## URL (proposal)
-[https://github.com/ysaibhargav/parallel-mcts-minimax-hybrids/blob/master/reports/Project_Proposal.pdf](https://github.com/ysaibhargav/parallel-mcts-minimax-hybrids/blob/master/reports/Project_Proposal.pdf)
+## URLs 
+[Proposal](https://github.com/ysaibhargav/parallel-mcts-minimax-hybrids/blob/master/reports/Project_Proposal.pdf)
+
+[Checkpoint](https://github.com/ysaibhargav/parallel-mcts-minimax-hybrids/blob/master/reports/Project_Checkpoint.pdf)
 
 ## SUMMARY
 We are going to implement a hybrid MCTS-minimax algorithm to solve chess problems. The algorithm will take advantage of various sources of parallelism in the algorithm with CUDA and OpenMP and the times to execute will be compared against speedup over sequential.
@@ -18,9 +20,13 @@ CUDA capable GPU will be required in addition to a system that can run OpenMP. T
 
 ## GOALS AND DELIVERABLES
 Our focus is on the following hybrid-parallel models
+
 Minimax-rollout leaf parallel model
+
 Minimax-selection/evaluation root parallel model
+
 Minimax-selection/evaluation tree parallel model
+
 Minimax-rollout is a hybrid method in which the MCTS node value estimation is done in a more informed way through minimax searches starting from the node instead of performing random actions until a terminal state is reached. Minimax-selection/evaluation on the other hand triggers minimax searches at certain nodes based on a heuristic (often visit count based) to validate existing estimates of the node values. This is helpful in growing the tree quickly as it avoids unnecessary simulations at nodes for which we already have reliable information. For more details, see [1].
 
 In minimax-rollout leaf parallel, the idea is to parallelize minimax searches at the leaf nodes. Only the simulation step is performed in parallel. In minimax-selection/evaluation root parallel, each thread has an independent copy of the MCTS tree. The minimax search would be triggered locally based on the visit count heuristic. The trees are updated independently of one another; in order to make an action in the game, the trees are combined together as described in [2]. In minimax-selection/evaluation tree parallel, there is only one tree shared by the threads/cores. Each thread/core handles a randomly sampled leaf node and triggers minimax search in the evaluation step based on the heuristic as described earlier. For updates to the tree we plan on exploring global/local mutexes as described in [2].
@@ -37,23 +43,39 @@ Sequential code (combining chess code + MCTS + minimax, implementing and getting
 
 Week 2
 
-Sequential (implementing and getting minimax-selection hybrid to work) + CUDA leaf parallelism (minimax-rollout)
+Sequential (implementing and getting minimax-selection hybrid to work): FEN (Peter), MCTS (Sai)
 
 Week 3
 
-CUDA leaf parallelism (minimax-rollout) + OpenMP root parallelism (minimax-selection)
+Sequential (implementing and getting minimax-selection hybrid to work) (Sai)
+
+Week 3.5
+
+CUDA leaf parallelism (minimax-rollout) (Peter) + Sequential (root parallelism minimax) (Sai)
 
 Week 4
 
-OpenMP root parallelism (minimax-selection)
+CUDA leaf parallelism (minimax-rollout) (Peter) + OpenMP root parallelism (minimax-selection) (Sai)
+
+Week 4.5
+
+CUDA leaf parallelism (minimax-rollout) (Peter) + OpenMP root parallelism (minimax-selection) (Sai)
 
 Week 5
 
-Tree parallelism (CUDA/OpenMP) (minimax-selection)
+OpenMP root parallelism (minimax-selection) (Sai) + Tree parallelism (CUDA/OpenMP) (minimax-selection) (Peter)
+
+Week 5.5
+
+OpenMP root parallelism (minimax-selection) (Sai) + Tree parallelism (CUDA/OpenMP) (minimax-selection) (Peter)
 
 Week 6
 
-Report and finalization
+Tree parallelism (CUDA/OpenMP) (minimax-selection) (Peter + Sai)
+
+Week 6.5
+
+Report and finalization (Peter + Sai)
 
 
 ## REFERENCES
